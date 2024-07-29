@@ -1,19 +1,35 @@
-import React from 'react'
-import logo from '../../assets/shadepro.png'
-import { Container } from './navbarStyle'
-function navbar() {
+import React, { useState } from "react";
+import logo from "../../assets/shadepro.png";
+import { Container, Nav, Ul,Li } from "./navbarStyle";
+import ButtonNav from "../Button/Button";
+
+function Navbar() {
+  const [nav, setNav] = useState(["Demos", "Pages", "Support", "Contect"]);
+
   return (
+    // section 1 
+    <div>
+
+    
     <Container>
-        
-      <img src={logo} alt="" />
-      <ul>
-      <li>Home</li>
-      <li>about</li>
-      <li>contact</li>
-      <li>login</li>
-      </ul>
-      </Container>
-  )
+      {/* navbar  */}
+      <Nav>
+        <div>
+          <Ul>
+            <img src={logo} alt="Logo" />
+            {nav.map((item, index) => (
+              <Li key={index}>{item}</Li>
+            ))}
+          </Ul>
+        </div>
+        <div>
+          <ButtonNav  data={'Get started a project'} />
+        </div>
+      </Nav>
+    </Container>
+  
+    </div>
+  );
 }
 
-export default navbar
+export default Navbar;
