@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../../assets/shadepro.png";
 import { Container, Nav, Ul,Li } from "./navbarStyle";
 import ButtonNav from "../Button/Button";
+import { Menu } from "lucide-react";
 
 function Navbar() {
   const [nav, setNav] = useState(["Demos", "Pages", "Support", "Contect"]);
@@ -14,17 +15,20 @@ function Navbar() {
     <Container>
       {/* navbar  */}
       <Nav>
+      <img className="logo" src={logo} alt="Logo" />
         <div>
           <Ul>
-            <img src={logo} alt="Logo" />
+          
             {nav.map((item, index) => (
               <Li key={index}>{item}</Li>
             ))}
           </Ul>
+          
         </div>
         <div>
           <ButtonNav  data={'Get started a project'} />
         </div>
+        <Menu className="hamburger" />
       </Nav>
     </Container>
   

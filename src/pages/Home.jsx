@@ -9,10 +9,10 @@ const Home = () => {
     <Container>
       <Navbar />
       {/* sections  */}
-      <Sections>
+      {/* <Sections>
         <Section />
         <Section2 />
-      </Sections>
+      </Sections> */}
     </Container>
   );
 };
