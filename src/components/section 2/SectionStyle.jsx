@@ -2,6 +2,15 @@ import styled from "styled-components";
 
 export const Sectionmain = styled.div`
   font-family: sans-serif; 
+  display:flex;
+  flex-direction: column;
+   justify-content: center; 
+  align-items: center; 
+  line-height: 1.5; 
+  gap:10px;
+  word-spacing: 2px;
+  
+
 
   p {
     color: red;
@@ -46,5 +55,42 @@ export const Sectionmain = styled.div`
     .Card {
       gap: 5px;
     }
+  }.picmain {
+  justify-content:center;
+      align-items: center;
+  width: 800px;
+  height: 150px; 
+  // background-color: green;
+  display: flex;
+  gap:60px;
+  p{
+  color:black;}
+  @media(max-width: 992px) {
+    width: 600px;
   }
+  @media(max-width: 768px) {
+    width: 500px;
+  }
+  @media(max-width: 576px) {
+    width: 300px;
+  }
+}
+
+.pic {
+  width: 150px; /* Set width to desired size */
+  height: 150px; /* Set height to the same size as width */
+  border-radius: 50%;
+  background-color: red;
+}
+
+.review {
+ font-weight: bold;
+   width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dev{
+ font-weight: normal;
+}
 `;

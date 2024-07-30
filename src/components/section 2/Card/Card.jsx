@@ -3,32 +3,31 @@ import { Cards } from "../Card/CardStyle";
 import B1 from "../../../assets/section img/B1.png";
 import B2 from "../../../assets/section img/B2.jpeg";
 import B3 from "../../../assets/section img/B3.png";
-
-
+import { FaArrowRight } from "react-icons/fa";
 
 const Card = () => {
   const data = [
     {
       image: B1,
       title: "Graphic Designer",
-      para: "Lorem ipsum jsndjsdjas dsfh sdfegh weterihgsf wehwweiehewh etrhwheewoisfjsnfifh w hf eofdgjl ertuoiuer eru ter reirutht h w8uruhweet wwuhweetu uhwt",
-      psub: "Get it now",
-      backgroundColor: "#ecad66"
+      para: "White lots of unique blocks, you can easly build a page without coding. Build your next landing  page.",
+      btn: "Learn more",
+      backgroundColor: "#49be25",
     },
     {
       image: B2,
       title: "Digital",
-      para: "Lorem ipsum jLorem ipsum jsndjsdjas dsfh sdfegh weterihgsf wehwweiehewh etrhwheewoisfjsnfifh w hf eofdgjl ertuoiuer eru ter reirutht h w8uruhweet wwuhweetu uhwt sndjsdjas",
-      psub: "Get it now",
-      backgroundColor: "#0a6aa4"
+      para: "White lots of unique blocks, you can easly build a page without coding. Build your next landing  page.",
+      btn: "Learn more",
+      backgroundColor: "#0a6aa4",
     },
     {
       image: B3,
       title: "Software",
-      para: "Lorem ipsum Lorem ipsum jsndjsdjas dsfh sdfegh weterihgsf wehwweiehewh etrhwheewoisfjsnfifh w hf eofdgjl ertuoiuer eru ter reirutht h w8uruhweet wwuhweetu uhwt dfsdfjsndjsdjas",
-      psub: "Get it now",
-      backgroundColor: "#85a9c3"
-    }
+      para: "White lots of unique blocks, you can easly build a page without coding. Build your next landing  page.",
+      btn: "Learn more",
+      backgroundColor: "#be4d25",
+    },
   ];
 
   return (
@@ -40,7 +39,14 @@ const Card = () => {
             <h5>{item.title}</h5>
             <p className="para">{item.para}</p>
           </div>
-          <button>{item.psub}</button>
+          <div  className="spanbtn">
+
+          
+          <span>{item.btn}</span>
+          <span>
+            <FaArrowRight />
+          </span>
+          </div>
         </Cards>
       ))}
     </>

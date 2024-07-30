@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const Cards = styled.div`
+color:white;
   // border: 1px solid black;
   border-radius: 10px;
   width: 250px;
-  height: 300px;
+  height: 330px;
   padding: 10px;
   box-sizing: border-box;
   display: flex;
@@ -33,9 +34,11 @@ export const Cards = styled.div`
   }
 
   .para {
-    opacity: 40%;
-    color: black;
-    font-size: 10px;
+    opacity: 60%;
+    color: white;
+    font-size: 12px;
+     line-height: 1.5;
+  word-spacing: 2px; 
   }
 
   button {
@@ -51,4 +54,8 @@ export const Cards = styled.div`
       background-color: #0056b3;
     }
   }
+
+  .spanbtn{
+  display:flex;
+   gap:20px;}
 `;
