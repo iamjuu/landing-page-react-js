@@ -22,7 +22,20 @@ export const Nav = styled.div`
       @media (max-width: 700px) {
        display: block;
   }
+
+
+
+      
   }
+
+   .logo{
+       @media (max-width: 500px){
+       padding-left:100px;
+       
+       }
+      
+
+       }
 
   @media (max-width: 992px) {
     gap: 100px;
@@ -30,10 +43,7 @@ export const Nav = styled.div`
   @media (max-width: 768px) {
     gap: 50px;
   }
-   @media (max-width :700px){
-   
-   
-   }
+ 
 `;
 
 export const Ul = styled.div`

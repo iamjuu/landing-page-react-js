@@ -8,20 +8,7 @@ import B3 from "../../assets/section img/B3.png";
 const Section = () => {
   return (
     <>
-      <SectionBody>
-        <Sectionpara> OUR SERVICES</Sectionpara>
-
-        <h2>
-          We provide greate services for our <br /> customers based on needs
-        </h2>
-      </SectionBody>
-      <Card
-        h4={"Graphics"}
-        para={
-          " Lorem ipsum dolor sit amet consectetur, excepturi! Corporis consectetur deserunt "
-        }
-        img={B1}
-      />
+    
     </>
   );
 };
