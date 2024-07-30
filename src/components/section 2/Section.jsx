@@ -1,14 +1,21 @@
 import React from "react";
-import { Sectionpara } from "../section/sectionStyle";
-import { SectionBody } from "../section 2/SectionStyle";
+import {Sectionmain} from '../section 2/SectionStyle'
 import Card from "./Card/Card";
-import B1 from "../../assets/section img/B1.png";
-import B2 from "../../assets/section img/B2.jpeg";
-import B3 from "../../assets/section img/B3.png";
+
 const Section = () => {
   return (
     <>
-    
+    <Sectionmain>
+      <div className="text">
+
+      <p>OUR SERVICES</p>
+      <h2>We are providing greatr services for our <br /> customers based on needs</h2>
+      </div>
+      {/* card  */}
+      <div className="Card">
+        <Card  />
+      </div>
+    </Sectionmain>
     </>
   );
 };
